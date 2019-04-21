@@ -20,7 +20,7 @@ class SelectiveAuth < Rack::Auth::Basic
   WRITE_PATH_RE = %r{
     ^/
     (gollum/)? # This path prefix was introduced in Gollum 5
-    (create/|edit/|delete/|rename/|revert/|uploadFile$|upload_file$)
+    (create/|edit/|delete/|deleteFile/|rename/|revert/|uploadFile$|upload_file$)
   }x
 
   def call(env)
@@ -58,3 +58,4 @@ class Precious::App
         }
     end
 end
+
