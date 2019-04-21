@@ -1,0 +1,2 @@
+#!/bin/sh
+git push [replace with url, user, pass and put in git hooks] --all
